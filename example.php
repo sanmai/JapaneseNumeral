@@ -1,4 +1,10 @@
 <?php
+/*
+ * Copyright 2014 OFTN Inc.
+ * Copyright 2017 Alexey Kopytko <alexey@kopytko.com>
+ *
+ * Licensed under the MIT License; see LICENSE for details.
+ */
 
 require 'vendor/autoload.php';
 
