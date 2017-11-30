@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/sanmai/JapaneseNumeral.svg?branch=master)](https://travis-ci.org/sanmai/JapaneseNumeral)
 [![Coverage Status](https://coveralls.io/repos/github/sanmai/JapaneseNumeral/badge.svg?branch=master)](https://coveralls.io/github/sanmai/JapaneseNumeral?branch=master)
-
 [![Latest Stable Version](https://poser.pugx.org/sanmai/japanese-numerals/version)](https://packagist.org/packages/sanmai/japanese-numerals)
 [![License](https://poser.pugx.org/sanmai/japanese-numerals/license)](https://packagist.org/packages/sanmai/japanese-numerals)
 
