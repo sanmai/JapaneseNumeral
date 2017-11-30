@@ -1,0 +1,31 @@
+<?php
+
+$header = <<<'EOF'
+Copyright 2014 OFTN Inc.
+Copyright 2017 Alexey Kopytko <alexey@kopytko.com>
+
+Licensed under the MIT License; see LICENSE for details.
+EOF;
+
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules([
+        '@Symfony' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'no_unreachable_default_argument_value' => true,
+        'no_useless_else' => true,
+        'no_useless_return' => true,
+        'ordered_class_elements' => true,
+        'ordered_imports' => true,
+        'phpdoc_add_missing_param_annotation' => true,
+        'phpdoc_order' => true,
+        'semicolon_after_instruction' => true,
+        'header_comment' => ['header' => $header, 'separate' => 'bottom'],
+        'yoda_style' => null,
+        'ordered_class_elements' => null,
+    ])
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+        ->in(__DIR__)
+    )
+;
