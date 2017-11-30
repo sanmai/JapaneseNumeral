@@ -12,7 +12,7 @@ Installation is simple:
 
 # Usage
 
-To convert a numberal from Hindu-Arabic numerals to Japanese numerals, use:
+To convert a number from Hindu-Arabic numerals to Japanese numerals, use:
 
 ```php
 $japanese = \JapaneseNumerals\JapaneseNumerals::fromArabicToJapanese(123);
