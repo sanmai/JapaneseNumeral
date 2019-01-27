@@ -31,7 +31,7 @@ class JapaneseNumerals
      * @param string     $right Number to the Right of the Decimal Place
      * @param int        $flags Flags
      * @param mixed      $left
-     * @param null|mixed $right
+     * @param mixed|null $right
      * @param mixed      $flags
      *
      * @return string Japanese Numeral
