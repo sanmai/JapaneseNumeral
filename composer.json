@@ -1,7 +1,7 @@
 {
     "name": "sanmai/japanese-numerals",
-    "description": "Library to convert Japanese numeral to their Western variants (AKA Hindu-Arabic numerals)",
     "type": "library",
+    "description": "Library to convert Japanese numeral to their Western variants (AKA Hindu-Arabic numerals)",
     "license": "MIT",
     "authors": [
         {
@@ -22,9 +22,9 @@
         "php": "^7.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.5 || ^7",
+        "friendsofphp/php-cs-fixer": "^2",
         "php-coveralls/php-coveralls": "^2",
-        "friendsofphp/php-cs-fixer": "^2"
+        "phpunit/phpunit": "^8.5 || ^7"
     },
     "autoload": {
         "psr-4": {
