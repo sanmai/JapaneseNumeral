@@ -237,6 +237,7 @@ class JapaneseNumerals
         }
         $numbers[100] = '百'; // 100
         $numbers[1000] = '千'; // 1,000
+
         return $numbers;
     }
 
@@ -275,6 +276,7 @@ class JapaneseNumerals
         if ($flags & self::USE_FORMAL_TEN_THOUSAND == self::USE_FORMAL_TEN_THOUSAND) {
             $quartets[1] = '萬';
         } // Older formal character for 10,000
+
         return $quartets;
     }
 
