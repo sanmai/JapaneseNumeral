@@ -18,6 +18,6 @@ class FromJapaneseToArabicTest extends TestCase
      */
     public function testConvert($japanese, $arabic)
     {
-        $this->assertEquals($arabic, JapaneseNumerals::fromJapaneseToArabic($japanese));
+        $this->assertSame($arabic, JapaneseNumerals::fromJapaneseToArabic($japanese));
     }
 }

@@ -8,9 +8,9 @@
 
 namespace JapaneseNumerals;
 
-class TestCase extends \PHPUnit\Framework\TestCase
+class TestCase extends \LegacyPHPUnit\TestCase
 {
-    public static function setUpBeforeClass(): void
+    public static function doSetUpBeforeClass()
     {
         mb_internal_encoding('UTF-8');
     }
