@@ -419,7 +419,7 @@ class TestCase extends \LegacyPHPUnit\TestCase
         ['九百九十九', '999'],
     ];
 
-    public function dataProvider()
+    public static function dataProvider()
     {
         return self::DATASET;
     }
