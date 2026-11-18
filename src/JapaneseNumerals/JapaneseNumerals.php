@@ -139,6 +139,8 @@ class JapaneseNumerals
      * @param	string	Japanese Numeral
      * @param mixed $num
      *
+     * @throws \InvalidArgumentException
+     *
      * @return string Arabic Numeral
      */
     public static function fromJapaneseToArabic($num)
@@ -164,8 +166,9 @@ class JapaneseNumerals
                 $temp2 = 0;
             } else {
                 foreach ($myriads as $j => $v) {
-                    if (self::substr_unicode($j, 0, 1) == $parse) {
-                        $i += mb_strlen($j);
+                    if (self::substr_unicode($num, $i, mb_strlen($j)) == $j) {
+                        $i += mb_strlen($j) - 1;
+                        $myriad += $temp2;
                         if ($myriad == 0) {
                             $myriad = $temp;
                         }
@@ -173,9 +176,11 @@ class JapaneseNumerals
                         $myriad = 0;
                         $temp = 1;
                         $temp2 = 0;
-                        break;
+                        continue 2;
                     }
                 }
+
+                throw new \InvalidArgumentException('Invalid Japanese numeral: '.$num);
             }
         }
         $result = bcadd($result, $temp2);
