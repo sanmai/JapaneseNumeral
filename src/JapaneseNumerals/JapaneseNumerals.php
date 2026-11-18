@@ -165,7 +165,8 @@ class JapaneseNumerals
             } else {
                 foreach ($myriads as $j => $v) {
                     if (self::substr_unicode($j, 0, 1) == $parse) {
-                        $i += mb_strlen($j);
+                        $i += mb_strlen($j) - 1;
+                        $myriad += $temp2;
                         if ($myriad == 0) {
                             $myriad = $temp;
                         }
