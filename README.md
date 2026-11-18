@@ -34,10 +34,6 @@ Should output:
 
     string(4) "2025"
 
-# Large numbers
-
-The library converts `九百八十三万六千七百三` to `9836703` and `二十億三千六百五十二万千八百一` to `2036521801`, examples given in [the section on large numbers in the Wikipedia article](https://en.wikipedia.org/wiki/Japanese_numerals#Large_numbers).
-
 # Acknowledgements
 
 Special thanks go to Navarr Barnier (@navarr) for [the initial implementation of the algorithm](https://github.com/oftn-oswg/common/blob/master/number/japanese.php).
